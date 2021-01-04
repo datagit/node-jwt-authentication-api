@@ -19,6 +19,10 @@ app.use('/users', require('./users/users.controller'));
 // global error handler
 app.use(errorHandler);
 
+// Serving static files in Express
+// https://expressjs.com/en/starter/static-files.html
+app.use('/doc', express.static('./doc'));
+
 // start server
 const port = process.env.NODE_ENV === 'production' ? 80 : 4000;
 const server = app.listen(port, function () {

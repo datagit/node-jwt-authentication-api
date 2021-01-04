@@ -51,3 +51,7 @@ Accept-Encoding: gzip, deflate, br
 Connection: keep-alive
 Content-Length: 50
 ```
+- add apidoc for api
+```bash
+apidoc -i apidoc -o doc/
+```
