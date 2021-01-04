@@ -8,6 +8,7 @@
         "url": "https://github.com/cornflourblue/node-jwt-authentication-api.git"
     },
     "scripts": {
+        "dev": "node --inspect ./server.js",
         "start": "nodemon ./server.js"
     },
     "dependencies": {
